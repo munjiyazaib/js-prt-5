@@ -1,18 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
     <title>Drag and Drop File Uploader</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: "Zilla Slab", serif;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background-color: #f4f4f4;
+            /* background-color: #f4f4f4; */
+            background-color: #9f8787;
         }
+
         .upload-box {
             width: 400px;
             padding: 20px;
@@ -21,14 +29,17 @@
             text-align: center;
             cursor: pointer;
         }
+
         .upload-box.dragover {
             border-color: #000;
         }
+
         .file-list {
             margin-top: 10px;
         }
     </style>
 </head>
+
 <body>
     <div class="upload-box" id="drop-area">
         <p>Drag & Drop files here or click to upload</p>
@@ -72,4 +83,5 @@
         }
     </script>
 </body>
+
 </html>
